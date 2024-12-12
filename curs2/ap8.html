@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n;
+        let x;
+        x=0;
+        let nr;
+        n = +window.prompt('nr de produse cumparate', 10)
+        for(i=1;i<=n;i++){
+          nr = +window.prompt('produsul are pretul',5)
+          document.write('<p> Pretul este:' + nr + '</p>')
+          x=x+nr;
+        }
+       document.write('pretul total este:')
+       document.write(x)
+    </script>
+</body>
+</html>
