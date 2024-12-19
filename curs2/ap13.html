@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n;
+        n = eval(prompt('introduceti un nr',20));
+        let i;
+        for(i=-1;i<n;i+=2){
+            for(let c=1;c<n-i;c++)
+            document.write('.');
+            for(let j=1;j<i+1;j++){
+                 document.write(`*`)
+            }
+            document.write('<br>')
+        }
+    </script>
+</body>
+</html>
