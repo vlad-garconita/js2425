@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        let myarr=[1,2,3,4];
+        let siuma = myarr.reduce(function(s,a){
+            return s + a ;
+        });
+        console.log(suma);
+      //2
+        let suma2=0;
+        myarr.forEach(function(a){suma2 +=a;});
+        console.log(suma2);
+
+        //3
+        var myarr = ['mere','cirese','pere','banane','ananas'];
+        myarr.sort(function (a, b){
+            return b.length - a.length
+        });
+        console.log(myarr);
+
+    </script>
+</body>
+</html>

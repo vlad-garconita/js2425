@@ -11,10 +11,13 @@
             document.write('Bine ai venit!');
         }
         salut();
-        function suma(a,b){
+        function suma(a,b = 100){
             console.log(`suma dintre ${a} si ${b} este: ${a+b}`)
         }
-   
+        suma(10,20);
+        suma(35,64);
+        suma(45);
+        
     </script>
 </body>
 </html>
