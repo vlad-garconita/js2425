@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CIDURILE ASCII VS CARACTERE </h1>
+    <p id="demo"></p>
+    <script>
+        function asciiToChar(code) {
+            let text = String.fromCharCode(code);
+            document.getElementById('demo').append( code + '->' + text + ' ');
+        }
+        // asciiToChar(65);
+        // asciiToChar(97);
+        for(let i =0;i <127;i++){
+            asciiToChar(i);
+            document.createElement('br');
+        }
+
+    </script>
+</body>
+</html>

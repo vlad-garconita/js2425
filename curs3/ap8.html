@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Demo"></div>
+    <script>
+        myDemo = document.getElementById('Demo')
+        //  const myArray = [[1,2,3] [4,5,6]]
+        const tari = [
+            {
+                name: 'Afghanistan',
+                capital: 'Kabul',
+                languages: ['Pashto', 'Uzbek', 'Turkmen'],
+                population: 27657145,
+                flag: 'https://restcountries.eu/data/afg.svg',
+                currency: 'Afghan afghani'
+            },
+            {
+                name: 'Åland Islands',
+                capital: 'Mariehamn',
+                languages: ['Swedish'],
+                population: 28875,
+                flag: 'https://restcountries.eu/data/ala.svg',
+                currency: 'Euro'
+            }
+        ];
+
+        console.log(tari[0].name);
+        myDemo.innerHTML = `
+         <p>Nume : ${tari[0].name} </p> 
+         <p> Capitala: ${tari[0].capital} </p>`;
+
+
+
+
+    </script>
+</body>
+
+</html>
