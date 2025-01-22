@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                   function produsNou(nume,pret,stoc,dataFabricarii) {
+            this.nume = nume;
+            this.pret = pret;
+            this.stoc = stoc;
+            this.dataFabricarii = dataFabricarii;
+            this.afiseaza = function (){
+                console.log (` Produsul ${this.nume} costa ${this.pret}`)
+            },
+            this.cumpara = function () {
+                if(this.stoc > 0){
+                    this.stoc -= 1;
+                    console.log(`Produsul ${this.nume} a fost adaugat in cos`)
+                }
+            }
+        }
+        const paine = new produsNou ('Paine', 8,36, '2025-02-25');
+        // paine.afiseaza();
+        // paine.cumpara() ;
+
+
+        const paineNeagra = Object.assign(paine);
+        paineNeagra.afiseaza();
+        paineNeagra.nume = 'paine neagra';
+        paineaNeagra.afiseaza();
+
+        const paineCuSeminte = Object.create(paine);
+        console.log(paineCuSeminte)
+        paineCuSeminte.__proto__.nume = 'paine cu seminte';
+        console.log(paineCuSeminte);
+        paineCuSeminte.afiseaza();
+    </script>
+</body>
+</html>
